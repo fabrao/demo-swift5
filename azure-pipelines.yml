@@ -18,13 +18,17 @@ steps:
 #    path: 'Pods'
 #    cacheHitVar: 'PODS_CACHE_RESTORED'
 
-#- task: CocoaPods@0
-#  inputs:
-#    forceRepoUpdate: false
+- task: CocoaPods@0
+  inputs:
+    forceRepoUpdate: false
 
-#- task: CocoaPods@0
-#  inputs:
-#    forceRepoUpdate: false
+- task: CmdLine@2
+  inputs:
+    script: 'pod deintegrate' 
+
+- task: CocoaPods@0
+  inputs:
+    forceRepoUpdate: true
 
 - task: Xcode@5
   inputs:
