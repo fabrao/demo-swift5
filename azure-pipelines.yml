@@ -37,6 +37,6 @@ steps:
     configuration: 'Release'
     #xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcWorkspacePath: 'demo-temporario.xcworkspace'
-    xcodeDeveloperDir: '/Applications/Xcode_11.2.1.app/Contents/Developer'
+    xcodeDeveloperDir: '/Applications/Xcode_11.7.app/Contents/Developer'
     xcodeVersion: 'specifyPath'
     packageApp: false
